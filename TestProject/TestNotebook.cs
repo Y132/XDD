@@ -136,7 +136,7 @@ namespace TestProject
         public void TestMethod9()
         {
             Note note = new Contact("ФИО","Задача");
-            Assert.AreEqual(((Contact)note).get_fio(), "Задача");
+            Assert.AreEqual(((Contact)note).get_fio(), "ФИО");
         }
         
     }
