@@ -209,5 +209,14 @@ namespace TestProject
             nb.addNote(note);
             Assert.AreEqual(nb.getCount(), 1);
         }
+
+        [TestMethod]
+        public void TestMethod18()
+        {
+            NoteBook nb = new NoteBook();
+            Note note = new Memo("Описание");
+            nb.addNote(note);
+            Assert.AreEqual(nb.deleteNote(note),true);
+        }
     }
 }

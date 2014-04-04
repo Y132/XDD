@@ -24,5 +24,10 @@ namespace TDD
         {
             notebook.Add(note);
         }
+
+        public bool deleteNote(Note note)
+        {
+            return false;
+        }
     }
 }
