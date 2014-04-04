@@ -19,6 +19,11 @@ namespace TDD
         {
             return notebook.Count;
         }
+        
+        public Note getIiem(int i)
+        {
+            return notebook[i];
+        }
 
         public void addNote(Note note)
         {
