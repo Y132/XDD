@@ -117,7 +117,7 @@ namespace TestProject
             Note note = new Task(d, "Задача");
             DateTime d1 = new DateTime(2014, 3, 3);
             ((Task)note).set_dataStart(d1);
-            Assert.AreEqual(((Task)note).get_dataStart(), d);
+            Assert.AreEqual(((Task)note).get_dataStart(), d1);
             Assert.AreEqual(((Task)note).get_data(), "Задача");
         }
     }
