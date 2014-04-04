@@ -7,13 +7,17 @@ namespace TDD
 {
     public class Task : Note
     {
+        protected
+            DateTime dataStart;
+
         public Task(DateTime dataStart0, string s): base(s)
         {
+            dataStart = dataStart0;
         }
 
         public DateTime get_dataStart()
         {
-            return new DateTime(2014, 1, 1);
+            return dataStart;
         }
     }
 }
