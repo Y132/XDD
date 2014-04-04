@@ -10,7 +10,13 @@ namespace TDD
         protected
             string fio;
 
-        public Contact(string fio0, string s): base(s)
+        public Contact(string fio0, string s) : base(s)
+        {
+            fio = fio0;
+        }
+
+        public Contact(string fio0, string adress0, string tel0, string s)
+            : base(s)
         {
             fio = fio0;
         }
@@ -23,6 +29,16 @@ namespace TDD
         public string get_fio()
         {
             return fio;
+        }
+
+        public string get_adress()
+        {
+            return "";
+        }
+
+        public string get_tel()
+        {
+            return "";
         }
     }
 }
