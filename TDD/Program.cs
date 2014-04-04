@@ -21,10 +21,12 @@ namespace TDD
             Console.WriteLine(((Task)s).get_dataStart());
 
 
-            s = new Contact("ФИО", "Контакт");
+            s = new Contact("ФИО", "Адрес", "Телефон", "Контакт");
 
             Console.WriteLine(s.get_data());
             Console.WriteLine(((Contact)s).get_fio());
+            Console.WriteLine(((Contact)s).get_adress());
+            Console.WriteLine(((Contact)s).get_tel());
 
             Console.ReadKey();
         }
