@@ -33,12 +33,12 @@ namespace TDD
 
         public string get_adress()
         {
-            return "";
+            return "Адрес";
         }
 
         public string get_tel()
         {
-            return "";
+            return "Телефон";
         }
     }
 }
