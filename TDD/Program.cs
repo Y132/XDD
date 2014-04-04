@@ -10,23 +10,14 @@ namespace TDD
         static void Main(string[] args)
         {
             Note s;
-            s = new Note("Первая запись");
+            s = new Memo("Запись первая");
+            ((Memo)s).info();
 
-            Console.WriteLine(s.get_data());
-            Console.WriteLine(s.get_time());
-
-            s = new Task(new DateTime(2014, 1, 1), "Задача");
-
-            Console.WriteLine(s.get_data());
-            Console.WriteLine(((Task)s).get_dataStart());
-
-
-            s = new Contact("ФИО", "Адрес", "Телефон", "Контакт");
-
-            Console.WriteLine(s.get_data());
-            Console.WriteLine(((Contact)s).get_fio());
-            Console.WriteLine(((Contact)s).get_adress());
-            Console.WriteLine(((Contact)s).get_tel());
+            s = new Task(new DateTime(2014, 12, 12), "Запись вторая");
+            ((Task)s).info();
+            
+            s = new Contact("Петров И.И.", "Барнаул", "123-321", "Запись третья");
+            ((Contact)s).info();
 
             Console.ReadKey();
         }

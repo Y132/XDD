@@ -15,11 +15,18 @@ namespace TDD
             dataStart = dataStart0;
         }
 
+        public override void info()
+        {
+            Console.WriteLine("Задача");
+            base.info();
+            Console.WriteLine("Дата начала задачи: " + dataStart);
+            Console.WriteLine();
+        }
+
         public void set_dataStart(DateTime dataStart0)
         {
             dataStart = dataStart0;
         }
-
         public DateTime get_dataStart()
         {
             return dataStart;

@@ -26,6 +26,16 @@ namespace TDD
             tel = tel0;
         }
 
+        public override void info()
+        {
+            Console.WriteLine("Контакт");
+            base.info();
+            Console.WriteLine("ФИО: " + fio);
+            Console.WriteLine("Адрес: " + adress);
+            Console.WriteLine("Номер телефона: " + tel);
+            Console.WriteLine();
+        }
+
         public void set_fio(string fio0)
         {
             fio = fio0;

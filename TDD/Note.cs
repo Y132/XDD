@@ -18,6 +18,12 @@ namespace TDD
             time = DateTime.Now;
         }
 
+        public virtual void info()
+        {
+            Console.WriteLine("Дата составления: " + time);
+            Console.WriteLine("Описание: " + data);
+        }
+
         public void set_data(string data0)
         {
             data = data0;
