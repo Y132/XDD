@@ -36,11 +36,17 @@ namespace TDD
             return fio;
         }
 
+        public void set_adress(string adress0)
+        {
+        }
         public string get_adress()
         {
             return adress;
         }
 
+        public void set_tel(string tel0)
+        {
+        }
         public string get_tel()
         {
             return tel;
