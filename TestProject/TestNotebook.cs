@@ -99,5 +99,15 @@ namespace TestProject
             Assert.AreEqual(((Task)note).get_dataStart(), d);            
             Assert.AreEqual(((Task)note).get_data(), "Запись");
         }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            DateTime d = new DateTime(2014, 2, 2);
+            Note note = new Task(d, "Задача");
+            Assert.AreEqual(((Task)note).get_dataStart(), d);
+            Assert.AreEqual(((Task)note).get_data(), "Задача");
+        }
+
     }
 }
