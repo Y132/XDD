@@ -187,5 +187,15 @@ namespace TestProject
             Assert.AreEqual(((Contact)note).get_adress(), "Барнаул");
             Assert.AreEqual(((Contact)note).get_tel(), "11-22");
         }
+
+        [TestMethod]
+        public void TestMethod16()
+        {
+            Note note = new Contact("ФИО", "Адрес", "Телефон", "Задача");
+            ((Contact)note).set_adress("Питер");
+            ((Contact)note).set_tel("111-222");
+            Assert.AreEqual(((Contact)note).get_adress(), "Питер");
+            Assert.AreEqual(((Contact)note).get_tel(), "111-222");
+        }
     }
 }
