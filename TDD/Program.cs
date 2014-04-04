@@ -15,6 +15,11 @@ namespace TDD
             Console.WriteLine(s.get_data());
             Console.WriteLine(s.get_time());
 
+            s = new Task(new DateTime(2014, 1, 1), "Задача");
+
+            Console.WriteLine(s.get_data());
+            Console.WriteLine(((Task)s).get_dataStart());
+
             Console.ReadKey();
         }
     }
