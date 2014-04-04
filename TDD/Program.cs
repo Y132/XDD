@@ -9,7 +9,12 @@ namespace TDD
     {
         static void Main(string[] args)
         {
+            Note s;
+            s = new Note("Первая запись");
 
+            Console.WriteLine(s.data);
+
+            Console.ReadKey();
         }
     }
 }

@@ -64,7 +64,7 @@ namespace TestProject
         public void TestMethod1()
         {
             Note note = new Note("Первая запись");
-            Assert.(note.data,"Первая запись");
+            Assert.AreEqual(note.data,"Первая запись");
         }
     }
 }
