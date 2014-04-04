@@ -153,5 +153,13 @@ namespace TestProject
             ((Contact)note).set_fio("Иванов");
             Assert.AreEqual(((Contact)note).get_fio(), "Иванов");
         }
+
+        [TestMethod]
+        public void TestMethod12()
+        {
+            Note note = new Contact("Петров Петр Петрович", "Задача");
+            ((Contact)note).set_fio("Антонов");
+            Assert.AreEqual(((Contact)note).get_fio(), "Антонов");
+        }
     }
 }
