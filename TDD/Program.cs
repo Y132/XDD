@@ -13,6 +13,7 @@ namespace TDD
             s = new Note("Первая запись");
 
             Console.WriteLine(s.data);
+            Console.WriteLine(s.time);
 
             Console.ReadKey();
         }

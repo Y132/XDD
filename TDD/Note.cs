@@ -9,10 +9,13 @@ namespace TDD
     {
         public
             string data;
+        public
+            DateTime time;
 
         public Note(string data0)
         {
             data = data0;
+            time = DateTime.Now; 
         }
     }
 }
