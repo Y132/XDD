@@ -17,6 +17,7 @@ namespace TDD
 
         public void set_fio(string fio0)
         {
+            fio = "Иванов";
         }
 
         public string get_fio()
