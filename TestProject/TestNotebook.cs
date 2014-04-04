@@ -83,5 +83,12 @@ namespace TestProject
             Assert.AreEqual(note.get_data(), "Первая запись");
         }
 
+        [TestMethod]
+        public void TestMethod4()
+        {
+            Note note = new Note("Первая запись");
+            note.set_data("Вторая запись");
+            Assert.AreEqual(note.get_data(), "Вторая запись");
+        }
     }
 }
