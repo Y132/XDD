@@ -15,6 +15,10 @@ namespace TDD
             fio = fio0;
         }
 
+        public void set_fio(string fio0)
+        {
+        }
+
         public string get_fio()
         {
             return fio;
