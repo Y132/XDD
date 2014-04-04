@@ -17,7 +17,7 @@ namespace TDD
 
         public void set_dataStart(DateTime dataStart0)
         {
-            dataStart = new DateTime(2014, 3, 3);
+            dataStart = dataStart0;
         }
 
         public DateTime get_dataStart()
