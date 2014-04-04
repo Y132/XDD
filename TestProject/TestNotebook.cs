@@ -131,5 +131,13 @@ namespace TestProject
             Assert.AreEqual(((Task)note).get_dataStart(), d1);
             Assert.AreEqual(((Task)note).get_data(), "Задача");
         }
+
+        [TestMethod]
+        public void TestMethod9()
+        {
+            Note note = new Contact("ФИО","Задача");
+            Assert.AreEqual(((Contact)note).get_fio(), "Задача");
+        }
+        
     }
 }
