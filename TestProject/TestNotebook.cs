@@ -67,7 +67,6 @@ namespace TestProject
             Assert.AreEqual(note.data,"Первая запись");
         }
 
-
         [TestMethod]
         public void TestMethod2()
         {
@@ -75,5 +74,14 @@ namespace TestProject
             Assert.AreEqual(note.data, "Первая запись");
             Assert.AreEqual(note.time, DateTime.Now);
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            Note note = new Note("Первая запись");
+            note.set_data("Первая запись");
+            Assert.AreEqual(note.get_data(), "Первая запись");
+        }
+
     }
 }
