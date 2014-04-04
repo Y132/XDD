@@ -90,5 +90,14 @@ namespace TestProject
             note.set_data("Вторая запись");
             Assert.AreEqual(note.get_data(), "Вторая запись");
         }
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+                DateTime d = new DateTime(2014,1,1);
+            Note note = new Task(d,"Запись");
+            Assert.AreEqual(((Task)note).get_dataStart(), d);            
+            Assert.AreEqual(((Task)note).get_data(), "Запись");
+        }
     }
 }
