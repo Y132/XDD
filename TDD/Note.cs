@@ -7,15 +7,29 @@ namespace TDD
 {
     public class Note
     {
-        public
+        protected
             string data;
-        public
+        protected
             DateTime time;
 
         public Note(string data0)
         {
             data = data0;
-            time = DateTime.Now; 
+            time = DateTime.Now;
+        }
+
+        public void set_data(string data0)
+        {
+            data = "Первая запись";
+        }
+        public string get_data()
+        {
+            return "Первая запись";
+        }
+
+        public DateTime get_time()
+        {
+            return time;
         }
     }
 }

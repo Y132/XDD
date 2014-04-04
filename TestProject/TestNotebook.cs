@@ -64,15 +64,15 @@ namespace TestProject
         public void TestMethod1()
         {
             Note note = new Note("Первая запись");
-            Assert.AreEqual(note.data,"Первая запись");
+            Assert.AreEqual(note.get_data(),"Первая запись");
         }
 
         [TestMethod]
         public void TestMethod2()
         {
             Note note = new Note("Первая запись");
-            Assert.AreEqual(note.data, "Первая запись");
-            Assert.AreEqual(note.time, DateTime.Now);
+            Assert.AreEqual(note.get_data(), "Первая запись");
+            Assert.AreEqual(note.get_time(), DateTime.Now);
         }
 
         [TestMethod]

@@ -12,8 +12,8 @@ namespace TDD
             Note s;
             s = new Note("Первая запись");
 
-            Console.WriteLine(s.data);
-            Console.WriteLine(s.time);
+            Console.WriteLine(s.get_data());
+            Console.WriteLine(s.get_time());
 
             Console.ReadKey();
         }
