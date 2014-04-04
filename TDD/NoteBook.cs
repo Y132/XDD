@@ -27,6 +27,14 @@ namespace TDD
 
         public bool deleteNote(Note note)
         {
+            for (int i = 0, kol = notebook.Count; i < kol; i++)
+            {
+                if (note == notebook[i])
+                {
+                    notebook.RemoveAt(i);
+                    return true;
+                }
+            }
             return false;
         }
     }
