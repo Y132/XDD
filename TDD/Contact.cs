@@ -13,7 +13,7 @@ namespace TDD
 
         public string get_fio()
         {
-            return "";
+            return "ФИО";
         }
     }
 }
