@@ -38,6 +38,7 @@ namespace TDD
 
         public void set_adress(string adress0)
         {
+            adress = "Барнаул";
         }
         public string get_adress()
         {
@@ -46,6 +47,7 @@ namespace TDD
 
         public void set_tel(string tel0)
         {
+            tel = "11-22";
         }
         public string get_tel()
         {
