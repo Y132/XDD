@@ -20,11 +20,11 @@ namespace TDD
 
         public void set_data(string data0)
         {
-            data = "Первая запись";
+            data = data0;
         }
         public string get_data()
         {
-            return "Первая запись";
+            return data;
         }
 
         public DateTime get_time()
