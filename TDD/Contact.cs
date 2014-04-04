@@ -9,16 +9,21 @@ namespace TDD
     {
         protected
             string fio;
+        protected
+            string adress;
+        protected
+            string tel;
 
         public Contact(string fio0, string s) : base(s)
         {
             fio = fio0;
         }
 
-        public Contact(string fio0, string adress0, string tel0, string s)
-            : base(s)
+        public Contact(string fio0, string adress0, string tel0, string s) : base(s)
         {
             fio = fio0;
+            adress = adress0;
+            tel = tel0;
         }
 
         public void set_fio(string fio0)
@@ -33,12 +38,12 @@ namespace TDD
 
         public string get_adress()
         {
-            return "Адрес";
+            return adress;
         }
 
         public string get_tel()
         {
-            return "Телефон";
+            return tel;
         }
     }
 }
